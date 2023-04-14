@@ -191,10 +191,6 @@ body {
         opacity: .5;
     }
 
-    .data_element_last_p {
-        padding-bottom: 1.3rem;
-    }
-
     footer {
         font-family: 'Inter', sans-serif;
         color: var(--White);
