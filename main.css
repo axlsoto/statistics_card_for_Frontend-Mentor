@@ -1,0 +1,211 @@
+:root {
+    --Very_dark_blue: hsl(233, 47%, 7%);
+    --Dark_desaturated_blue: hsl(244, 38%, 16%);
+    --Soft_violet: hsl(277, 64%, 61%);
+
+    --White: hsl(0, 0%, 100%);
+    --Slightly_transparent_white_1: hsla(0, 0%, 100%, 0.75);
+    --Slightly_transparent_white_2: hsla(0, 0%, 100%, 0.6);
+
+    --Inter_400_y_700: font-family: 'Inter', sans-serif;
+    --Lexenda_Deca_400: font-family: 'Lexend Deca', sans-serif;
+}
+
+body {
+    background: var(--Very_dark_blue);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 62, 5%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CONTENIDO */
+
+
+/* MOBILE and TABLETS */
+
+@media screen and (min-width: 200px) and (max-width: 929px) {
+
+    .container {
+        background: var(--Dark_desaturated_blue);
+        color: var(--White);
+        text-align: center;
+        margin: 2rem;
+        border-radius: 10px;
+    }
+
+    main img {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .card_title {
+        font-family: 'Inter', sans-serif;
+        max-height: 5rem;
+        font-size: 1.6rem;
+        margin: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .card_title span {
+        color: var(--Soft_violet);
+    }
+
+    .card_info {
+        font-family: 'Inter', sans-serif;
+        color: var(--Slightly_transparent_white_1);
+        opacity: .5;
+        font-size: .95rem;
+        line-height: 1.7;
+        margin: 1.3rem;
+        margin-top: 0rem;
+    }
+
+    .data_container_grid {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .data_element {
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .data_element h2 {
+        font-size: 1.5rem;
+    }
+
+    .data_element h2,
+    .data_element p {
+        max-height: 0;
+    }
+
+    .data_element p {
+        color: var(--Slightly_transparent_white_1);
+        text-transform: uppercase;
+        font-size: .85rem;
+        margin-bottom: 2rem;
+        letter-spacing: .0.5rem;
+        opacity: .5;
+    }
+
+    .data_element_last_p {
+        padding-bottom: 1.3rem;
+    }
+
+    footer {
+        font-family: 'Inter', sans-serif;
+        color: var(--White);
+        text-align: center;
+        font-size: .8rem;
+        margin-bottom: 2rem;
+    }
+
+    footer a {
+        color: var(--Soft_violet);
+        text-decoration: none;
+        font-weight: 700;
+    }
+}
+
+/* PC */
+
+@media screen and (min-width: 930px) and (max-width: 2000px) {
+
+    .container {
+        background: var(--Dark_desaturated_blue);
+        color: var(--White);
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: 5rem;
+        border-radius: 10px;
+    }
+
+    .container_contenido_pc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 4rem;
+        max-width: 40rem;
+    }
+
+    main img {
+        max-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    .card_title {
+        font-family: 'Inter', sans-serif;
+        max-width: 85%;
+        font-size: 3rem;
+    }
+
+    .card_title span {
+        color: var(--Soft_violet);
+    }
+
+    .card_info {
+        font-family: 'Inter', sans-serif;
+        color: var(--Slightly_transparent_white_1);
+        max-width: 70%;
+        opacity: .5;
+        font-size: 1.1rem;
+        line-height: 1.7;
+    }
+
+    .data_container {
+        display: flex;
+        align-items: baseline;
+        gap: 6rem;
+    }
+
+    .data_element {
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .data_element h2 {
+        font-size: 1.5rem;
+    }
+
+    .data_element h2,
+    .data_element p {
+        max-height: 0;
+    }
+
+    .data_element p {
+        color: var(--Slightly_transparent_white_1);
+        text-transform: uppercase;
+        font-size: .85rem;
+        margin-bottom: 2rem;
+        letter-spacing: .0.5rem;
+        opacity: .5;
+    }
+
+    .data_element_last_p {
+        padding-bottom: 1.3rem;
+    }
+
+    footer {
+        font-family: 'Inter', sans-serif;
+        color: var(--White);
+        text-align: center;
+        margin-top: 6rem;
+        font-size: .8rem;
+    }
+
+    footer a {
+        color: var(--Soft_violet);
+        text-decoration: none;
+        font-weight: 700;
+    }
+}
